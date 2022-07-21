@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow, noodp">
+	<meta name="googlebot" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	
+	<title>HomePage</title></head>
+<body>
+	<svg style="display: none;">
+	    <symbol id="search" viewBox="0 0 21 21">
+	        <g>
+	            <circle cx="9.76657" cy="9.76657" r="8.98856" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	            <path d="M16.0183 16.4851L19.5423 20" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	        </g>
+	    </symbol>
+	    <symbol id="bag" viewBox="0 0 20 21">
+	        <g>
+	            <path d="M13.7729 8.30504V5.27304C13.7729 3.18904 12.0839 1.50004 10.0009 1.50004C7.91688 1.49104 6.21988 3.17204 6.21088 5.25604V5.27304V8.30504" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7422 20.0004H5.25778C2.90569 20.0004 1 18.0954 1 15.7454V10.2294C1 7.87937 2.90569 5.97437 5.25778 5.97437H14.7422C17.0943 5.97437 19 7.87937 19 10.2294V15.7454C19 18.0954 17.0943 20.0004 14.7422 20.0004Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	        </g>
+	    </symbol>
+	    <symbol id="arrow-l" viewBox="0 0 14 26">
+	        <g>
+	            <path d="M13.048 0.851074L0.847033 12.9996L13.048 25.1481" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	        </g>
+	    </symbol>
+	    <symbol id="arrow-r" viewBox="0 0 14 26">
+	        <g>
+	            <path d="M0.951965 25.1489L13.153 13.0004L0.951965 0.851926" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	        </g>
+	    </symbol>
+	    <symbol id="phone" viewBox="0 0 22 22">
+	        <g>
+	            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99033 3.87254C2.30665 3.34878 4.0495 1.44376 5.29322 1.50127C5.665 1.53208 5.99364 1.75699 6.26067 2.01784C6.87379 2.61656 8.62897 4.88101 8.72859 5.35753C8.97096 6.52621 7.57833 7.1999 8.00454 8.37783C9.09112 11.0366 10.9634 12.9088 13.6233 13.9943C14.8003 14.4205 15.474 13.0279 16.6428 13.2713C17.1183 13.3709 19.3839 15.126 19.9826 15.7391C20.2425 16.0051 20.4684 16.3347 20.4992 16.7065C20.5454 18.0159 18.5222 19.7833 18.1278 20.0092C17.1974 20.6747 15.9834 20.6634 14.5035 19.9753C10.3739 18.2572 3.77426 11.7822 2.02422 7.49669C1.35461 6.02505 1.30839 4.80297 1.99033 3.87254Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	        </g>
+	    </symbol>
+	    <symbol id="mail" viewBox="0 0 21 20">
+	        <g>
+	            <path d="M16.2677 7.06104L12.0023 10.4953C11.1951 11.1282 10.0635 11.1282 9.25628 10.4953L4.95422 7.06104" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88787 1.5H15.3158C16.6752 1.51525 17.969 2.08993 18.896 3.0902C19.823 4.09048 20.3022 5.42903 20.222 6.79412V13.322C20.3022 14.6871 19.823 16.0256 18.896 17.0259C17.969 18.0262 16.6752 18.6009 15.3158 18.6161H5.88787C2.96796 18.6161 1 16.2407 1 13.322V6.79412C1 3.87545 2.96796 1.5 5.88787 1.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	        </g>
+	    </symbol>
+	    <symbol id="location" viewBox="0 0 18 21">
+	        <g>
+	            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23914 9.39148C1.25354 5.15089 4.7029 1.7249 8.94348 1.7393C13.1841 1.75371 16.6101 5.20306 16.5957 9.44365V9.53061C16.5435 12.2871 15.0044 14.835 13.1174 16.8263C12.0382 17.9469 10.8331 18.939 9.52609 19.7828C9.1766 20.0851 8.6582 20.0851 8.3087 19.7828C6.3602 18.5145 4.65007 16.9133 3.25653 15.0523C2.01449 13.4296 1.3093 11.4599 1.23914 9.41756L1.23914 9.39148Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	            <circle cx="8.91738" cy="9.53948" r="2.46087" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	        </g>
+	    </symbol>
+	    <symbol id="google" viewBox="0 0 40 41">
+	        <g>
+	            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9902 23.961C29.6582 28.245 26.3382 31.211 21.9202 31.865C15.1782 32.863 8.55819 27.751 8.03419 20.951C7.49019 13.895 13.0562 8.00098 20.0022 8.00098C21.6082 8.00098 23.1402 8.31697 24.5402 8.88897C25.0262 9.08697 25.5762 8.91698 25.8242 8.45697L28.6942 3.16298C28.9662 2.65698 28.7702 2.00498 28.2462 1.76898C25.7322 0.632976 22.9442 0.000976562 20.0082 0.000976562C8.76419 0.000976562 -0.313813 9.27297 0.0081873 20.587C0.302187 30.909 8.82219 39.545 19.1362 39.983C30.2282 40.451 39.4282 31.891 39.9862 21.045C40.0082 20.649 40.0002 18.343 39.9922 16.991C39.9902 16.439 39.5422 16.001 38.9922 16.001H20.9942C20.4422 16.001 19.9942 16.447 19.9942 17.001V22.961C19.9942 23.511 20.4422 23.961 20.9942 23.961H30.9902Z" />
+	        </g>
+	    </symbol>
+	    <symbol id="twitter" viewBox="0 0 36 32">
+	        <g>
+	            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1539 32.0005C24.6459 32.0005 33.0299 20.7486 33.0299 10.0706C33.0299 9.77655 35.0899 8.00855 35.9719 4.32255C36.1519 3.57455 35.4239 2.98455 34.7379 3.29855C32.9779 4.10655 31.1919 3.46655 30.4159 2.54655C27.4319 -0.707449 22.4419 -0.863449 19.2679 2.19655C17.2219 4.17055 16.3539 7.11055 16.9879 9.91655C10.2859 10.3946 5.68386 7.21855 1.89986 2.86455C1.41186 2.29855 0.505862 2.59655 0.403862 3.34455C-0.156138 7.50855 -0.332137 17.6325 9.69986 23.4466C7.95786 25.9506 4.54786 27.4286 0.751862 28.0626C-0.088138 28.2046 -0.288138 29.3686 0.479862 29.7446C3.48786 31.2246 6.79386 31.9986 10.1539 31.9946" />
+	        </g>
+	    </symbol>
+	    <symbol id="instagram" viewBox="0 0 36 36">
+	        <g>
+	            <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000397272 4.5C-0.000397272 2.016 2.0156 0 4.4996 0C6.9836 0 8.9996 2.016 8.9996 4.5C8.9996 6.984 6.9836 9 4.4996 9C2.0156 9 -0.000397272 6.984 -0.000397272 4.5ZM24.3008 10.8008C17.8388 10.8008 12.5988 16.0088 12.5988 22.4288V34.1988C12.5988 35.1928 13.4068 36.0008 14.4008 36.0008H18.5988C19.5928 36.0008 20.4008 35.1928 20.4008 34.1988V22.4288C20.4008 20.1568 22.3688 18.3408 24.7048 18.5748C26.7328 18.7768 28.1988 20.6308 28.1988 22.6688V34.1988C28.1988 35.1928 29.0068 36.0008 30.0008 36.0008H34.1988C35.1928 36.0008 36.0008 35.1928 36.0008 34.1988V22.4288C36.0008 16.0088 30.7608 10.8008 24.3008 10.8008ZM7.1992 12.5996H1.8012C0.807203 12.5996 -0.000797272 13.4056 -0.000797272 14.3996V34.1996C-0.000797272 35.1936 0.807203 35.9996 1.8012 35.9996H7.1992C8.1932 35.9996 8.9992 35.1936 8.9992 34.1996V14.3996C8.9992 13.4056 8.1932 12.5996 7.1992 12.5996Z" />
+	        </g>
+	    </symbol>
+	    <symbol id="facebook" viewBox="0 0 22 36">
+	        <g>
+	            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 1C22 0.448 21.55 0 21 0H16C10.476 0 6 4.03 6 9V14.4H1C0.448 14.4 0 14.848 0 15.4V20.6C0 21.152 0.448 21.6 1 21.6H6V35C6 35.552 6.448 36 7 36H13C13.55 36 14 35.552 14 35V21.6H19.238C19.688 21.6 20.082 21.3 20.204 20.868L21.646 15.668C21.824 15.032 21.344 14.4 20.684 14.4H14V9C14 8.006 14.894 7.2 16 7.2H21C21.55 7.2 22 6.752 22 6.2V1Z" />
+	        </g>
+	    </symbol>
+	</svg><div class="wrapper">
+	<header class="header">
+	<div class="container">
+	    <div class="header__inner">
+	        <div class="header__top">
+	            <div class="header__item">
+	                <div class="header__top-text">We Ship Everywhere! Free In The Us!</div>
+	            </div>
+	            <div class="header__item">
+	                <div class="logo">
+	                    <img src="assets/images/logo.svg" alt="Logo">
+	                </div>
+	                <div class="header__item-wrapper">
+	                    <div class="header__list">
+	                        <button class="header__btn" type="button">Login</button>
+	                        <button class="header__btn" type="button">Register</button>
+	                        <button class="header__btn" type="button">Wish List<span>(0)</span></button>
+	                    </div>
+	
+	                    <form class="search">
+	                        <input class="search__input" type="text">
+	                        <button class="search__btn" type="submit">
+	                            <svg class="search__btn-icon">
+	                                <use xlink:href="#search"></use>
+	                            </svg>
+	                        </button>
+	                    </form>
+	                    <button class="bag">
+	                        <svg class="bag__icon">
+	                            <use xlink:href="#bag"></use>
+	                        </svg>
+	                    </button>
+	                    <button class="burger" id="toggleBtn"><span>menu</span></button>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="header__bottom">
+	            <div class="nav">
+	                <a class="nav__link active" href="#">Home</a>
+	                <a class="nav__link" href="#">Vintage</a>
+	                <a class="nav__link" href="#">Imperial</a>
+	                <a class="nav__link" href="#">Sparkling</a>
+	                <a class="nav__link" href="#">Accessories</a>
+	                <a class="nav__link" href="#">Blog</a>
+	                <a class="nav__link" href="#">Product Details</a>
+	                <a class="nav__link" href="#">Contact</a>
+	            </div>
+	            <div class="header__list">
+	                <button class="header__btn" type="button">Login</button>
+	                <button class="header__btn" type="button">Register</button>
+	                <button class="header__btn" type="button">Wish List<span>(0)</span></button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	</header>	
+	<section class="intro">
+	<div class="container">
+	    <div class="intro__inner">
+	        <div class="intro__text">
+	            <span>The Experlence of Generations</span>
+	            <h1>In each<span>&nbsp;bottle</span></h1>
+	            <p>Experience a true “American Dream” at Winehouse and visit the first tasting room in the United
+	                States established by a former European mirgant vineyard worker and his family.</p>
+	            <a href="#">READ MORE</a>
+	        </div>
+	        <div class="intro__img">
+	            <img src="assets/images/intro.png" alt="images">
+	        </div>
+	    </div>
+	</div>
+	</section>
+	
+	<section class="new-wines">
+	<div class="container">
+	    <div class="new-wines__inner">
+	        <div class="new-wines__content">
+	            <div class="new-wines__text">
+	                <div class="new-wines__overtitle">New Wines</div>
+	                <h2><span>Merlot</span></h2>
+	                <div class="new-wines__subtitle">Winehouse Vineyard</div>
+	                <p>Merlot is loved for its boisterous black cherry flavors, supple
+	                    tannins, and chocolatey finish. On the high end, it’s often
+	                    mistaken with Cabernet Sauvignon.</p>
+	            </div>
+	            <div class="new-wines__buttons">
+	                <a class="btn" href="#">Learn more</a>
+	                <a class="btn btn--transparent" href="#">View more</a>
+	            </div>
+	        </div>
+	        <div class="swiper new-wines__slider">
+	            <div class="swiper-wrapper  new-wines__slider-wrapper">
+	                <div class="swiper-slide new-wines__slider-slide">
+	                    <div class="new-wines__slider-img">
+	                        <img src="assets/images/bottega.png" alt="images">
+	                    </div>
+	                </div>
+	                <div class="swiper-slide new-wines__slider-slide">
+	                    <div class="new-wines__slider-img">
+	                        <img src="assets/images/bottega.png" alt="images">
+	                    </div>
+	                </div>
+	                <div class="swiper-slide new-wines__slider-slide">
+	                    <div class="new-wines__slider-img">
+	                        <img src="assets/images/bottega.png" alt="images">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="new-wines__btn-prev">Prev</div>
+	            <div class="new-wines__btn-next">Next</div>
+	        </div>
+	    </div>
+	</div>
+	</section>
+	
+	<section class="products">
+	<div class="container">
+	    <div class="products__inner">
+	        <h2>Futured<span>&nbsp;Products</span></h2>
+	        <div class="products__tabs">
+	            <button class="products__tabs-btn active" type="button">All</button>
+	            <button class="products__tabs-btn" type="button">Red</button>
+	            <button class="products__tabs-btn" type="button">Rose</button>
+	            <button class="products__tabs-btn" type="button">White</button>
+	        </div>
+	        <div class="products__content">
+	            <a class="products__item" href="#">
+	                <div class="products__img">
+	                    <img src="assets/images/products/1.png" alt="images">
+	                    <span>30% off</span>
+	                </div>
+	                <div class="products__info">
+	                    <div class="products__title">Silver Oak</div>
+	                    <div class="products__price">
+	                        <div class="products__price-sale">$500.00</div>
+	                        $450.00
+	                    </div>
+	                </div>
+	            </a>
+	            <a class="products__item" href="#">
+	                <div class="products__img">
+	                    <img src="assets/images/products/2.png" alt="images">
+	                    <span>45% off</span>
+	                </div>
+	                <div class="products__info">
+	                    <div class="products__title">2015 Woodenhead</div>
+	                    <div class="products__price">
+	                        <div class="products__price-sale">$150.00</div>
+	                        $120.00
+	                    </div>
+	                </div>
+	            </a>
+	            <a class="products__item" href="#">
+	                <div class="products__img">
+	                    <img src="assets/images/products/3.png" alt="images">
+	                    <span>20% off</span>
+	                </div>
+	                <div class="products__info">
+	                    <div class="products__title">2014 red hills</div>
+	                    <div class="products__price">
+	                        <div class="products__price-sale">$850.00</div>
+	                        $1000.00
+	                    </div>
+	                </div>
+	            </a>
+	            <a class="products__item" href="#">
+	                <div class="products__img">
+	                    <img src="assets/images/products/1.png" alt="images">
+	                    <span>35% off</span>
+	                </div>
+	                <div class="products__info">
+	                    <div class="products__title">2012 Chardonnay</div>
+	                    <div class="products__price">
+	                        <div class="products__price-sale">$500.00</div>
+	                        $450.00
+	                    </div>
+	                </div>
+	            </a>
+	            <a class="products__item" href="#">
+	                <div class="products__img">
+	                    <img src="assets/images/products/4.png" alt="images">
+	                    <span>40% off</span>
+	                </div>
+	                <div class="products__info">
+	                    <div class="products__title">2008 Cabernet</div>
+	                    <div class="products__price">
+	                        <div class="products__price-sale">$500.00</div>
+	                        $450.00
+	                    </div>
+	                </div>
+	            </a>
+	            <a class="products__item" href="#">
+	                <div class="products__img">
+	                    <img src="assets/images/products/5.png" alt="images">
+	                    <span>New</span>
+	                </div>
+	                <div class="products__info">
+	                    <div class="products__title">Mazzei Siepi 2016</div>
+	                    <div class="products__price">
+	                        <div class="products__price-sale">$300.00</div>
+	                        $280.00
+	                    </div>
+	                </div>
+	            </a>
+	            <a class="products__item" href="#">
+	                <div class="products__img">
+	                    <img src="assets/images/products/6.png" alt="images">
+	                    <span>30% off</span>
+	                </div>
+	                <div class="products__info">
+	                    <div class="products__title">
+	                        Penfolds uncorks</div>
+	                    <div class="products__price">
+	                        <div class="products__price-sale">$400.00</div>
+	                        $360.00
+	                    </div>
+	                </div>
+	            </a>
+	            <a class="products__item" href="#">
+	                <div class="products__img">
+	                    <img src="assets/images/products/7.png" alt="images">
+	                    <span>New</span>
+	                </div>
+	                <div class="products__info">
+	                    <div class="products__title">
+	                        2012 Jacob's</div>
+	                    <div class="products__price">
+	                        <div class="products__price-sale">$1000.00</div>
+	                        $950.00
+	                    </div>
+	                </div>
+	            </a>
+	        </div>
+	        <div class="products__link"><a href="#">View MORE</a></div>
+	    </div>
+	</div>
+	</section>
+	
+	<section class="review">
+	<div class="container">
+	    <div class="review__inner">
+	        <div class="review__header">
+	            <h2>Client<span>&nbsp;Review</span></h2>
+	        </div>
+	        <div class="swiper review__slider">
+	            <div class="swiper-wrapper review__slider-wrapper">
+	                <div class="swiper-slide review__slider-slide">
+	                    <div class="review__slider-img">
+	                        <img src="assets/images/client.png" alt="images">
+	                    </div>
+	                    <div class="review__text">
+	                        <div class="review__name">David Luice</div>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis.</p>
+	                    </div>
+	                </div>
+	                <div class="swiper-slide review__slider-slide">
+	                    <div class="review__slider-img">
+	                        <img src="assets/images/client.png" alt="images">
+	                    </div>
+	                    <div class="review__text">
+	                        <div class="review__name">David Luice</div>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis.
+	                            Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus,
+	                            non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+	                            </p>
+	                    </div>
+	                </div>
+	                <div class="swiper-slide review__slider-slide">
+	                    <div class="review__slider-img">
+	                        <img src="assets/images/client.png" alt="images">
+	                    </div>
+	                    <div class="review__text">
+	                        <div class="review__name">David Luice</div>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis.</p>
+	                    </div>
+	                </div>
+	                <div class="swiper-slide review__slider-slide">
+	                    <div class="review__slider-img">
+	                        <img src="assets/images/client.png" alt="images">
+	                    </div>
+	                    <div class="review__text">
+	                        <div class="review__name">David Luice</div>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis.
+	                            Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus,
+	                            non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+	                            </p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="swiper-pagination review__slider-pagination"></div>
+	    </div>
+	</div>
+	</section>
+	
+	<section class="offer">
+	<div class="container">
+	    <div class="offer__inner">
+	        <h2>Amazing<span>&nbsp;Offer</span></h2>
+	        <div class="swiper offer__slider">
+	            <div class="swiper-wrapper offer__slider-wrapper">
+	                <a class="swiper-slide offer__slider-slide" href="#">
+	                    <div class="offer__slider-img">
+	                        <img src="assets/images/offer/1.png" alt="images">
+	                    </div>
+	                    <div class="offer__slider-txt">
+	                        <div class="offer__slider-name">pope valley winery</div>
+	                        <div class="offer__slider-price">$150.00</div>
+	                    </div>
+	                </a>
+	                <a class="swiper-slide offer__slider-slide" href="#">
+	                    <div class="offer__slider-img">
+	                        <img src="assets/images/offer/2.png" alt="images">
+	                    </div>
+	                    <div class="offer__slider-txt">
+	                        <div class="offer__slider-name">pope valley winery</div>
+	                        <div class="offer__slider-price">$140.00</div>
+	                    </div>
+	                </a>
+	                <a class="swiper-slide offer__slider-slide" href="#">
+	                    <div class="offer__slider-img">
+	                        <img src="assets/images/offer/3.png" alt="images">
+	                    </div>
+	                    <div class="offer__slider-txt">
+	                        <div class="offer__slider-name">pope valley winery</div>
+	                        <div class="offer__slider-price">$158.00</div>
+	                    </div>
+	                </a>
+	                <a class="swiper-slide offer__slider-slide" href="#">
+	                    <div class="offer__slider-img">
+	                        <img src="assets/images/offer/1.png" alt="images">
+	                    </div>
+	                    <div class="offer__slider-txt">
+	                        <div class="offer__slider-name">pope valley winery</div>
+	                        <div class="offer__slider-price">$150.00</div>
+	                    </div>
+	                </a>
+	            </div>
+	        </div>
+	        <div class="swiper-pagination offer__slider-pagination"></div>
+	    </div>
+	</div>
+	</section>
+	
+	<section class="events">
+	<div class="container">
+	    <div class="events__inner">
+	        <h2>Featured<span>&nbsp;Events</span></h2>
+	        <div class="swiper events__slider">
+	            <div class="swiper-wrapper events__slider-wrapper">
+	                <div class="swiper-slide events__slider-slide">
+	                    <div class="events__slider-img">
+	                        <img src="assets/images/events.jpg" alt="images">
+	                    </div>
+	                    <div class="events__slider-txt">
+	                        <div class="events__slider-title">10th Annual Barrel Tasting</div>
+	                        <div class="events__slider-subtitle">15 Sept</div>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p>
+	                        <a class="events__slider-link" href="#">read more</a>
+	                    </div>
+	                </div>
+	                <div class="swiper-slide events__slider-slide">
+	                    <div class="events__slider-img">
+	                        <img src="assets/images/events.jpg" alt="images">
+	                    </div>
+	                    <div class="events__slider-txt">
+	                        <div class="events__slider-title">10th Annual Barrel Tasting</div>
+	                        <div class="events__slider-subtitle">15 Sept</div>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p>
+	                        <a class="events__slider-link" href="#">read more</a>
+	                    </div>
+	                </div>
+	                <div class="swiper-slide events__slider-slide">
+	                    <div class="events__slider-img">
+	                        <img src="assets/images/events.jpg" alt="images">
+	                    </div>
+	                    <div class="events__slider-txt">
+	                        <div class="events__slider-title">10th Annual Barrel Tasting</div>
+	                        <div class="events__slider-subtitle">15 Sept</div>
+	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p>
+	                        <a class="events__slider-link" href="#">read more</a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="events__btn-prev">
+	            <svg class="events__btn-icon">
+	                <use xlink:href="#arrow-l"></use>
+	            </svg>
+	        </div>
+	        <div class="events__btn-next">
+	            <svg class="events__btn-icon">
+	                <use xlink:href="#arrow-r"></use>
+	            </svg>
+	        </div>
+	    </div>
+	</div>
+	</section>
+	
+	<section class="contact">
+	<div class="container">
+	    <div class="contact__inner">
+	        <h2>Contact<span>&nbsp;Us</span></h2>
+	        <div class="contact__content">
+	            <div class="contact__item contact__item--left">
+	                <div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.Lorem ipsum dolor sit amet, consectetur </div>
+	                <div class="contact__component">
+	                    <a class="contact__link" href="tel:+01232546987">
+	                        <svg class="contact__link-icon">
+	                            <use xlink:href="#phone"></use>
+	                        </svg>
+	                        +012-3254-6987
+	                    </a>
+	                    <a class="contact__link" href="malito:Food&drink@gmail.com">
+	                        <svg class="contact__link-icon">
+	                            <use xlink:href="#mail"></use>
+	                        </svg>
+	                        Food&drink@gmail.com
+	                    </a>
+	                    <a class="contact__link" href="https://goo.gl/maps/WSojKh2DjnkH11o46">
+	                        <svg class="contact__link-icon">
+	                            <use xlink:href="#location"></use>
+	                        </svg>
+	                        Brahmanbaira, Dhaka, Bangladesh
+	                    </a>
+	                </div>
+	                <div class="social social--contact">
+	                    <a class="social__item" href="#">
+	                        <svg class="social__icon">
+	                            <use xlink:href="#google"></use>
+	                        </svg>
+	                    </a>
+	                    <a class="social__item" href="#">
+	                        <svg class="social__icon">
+	                            <use xlink:href="#twitter"></use>
+	                        </svg>
+	                    </a>
+	                    <a class="social__item" href="#">
+	                        <svg class="social__icon">
+	                            <use xlink:href="#instagram"></use>
+	                        </svg>
+	                    </a>
+	                    <a class="social__item" href="#">
+	                        <svg class="social__icon">
+	                            <use xlink:href="#facebook"></use>
+	                        </svg>
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="contact__item contact__item--right">
+	                <form class="form">
+	                    <div class="form__group">
+	                        <span>Name</span>
+	                        <input type="text">
+	                    </div>
+	                    <div class="form__group">
+	                        <span>Email</span>
+	                        <input type="email">
+	                    </div>
+	                    <div class="form__group">
+	                        <span>Phone</span>
+	                        <input type="number">
+	                    </div>
+	                    <div class="form__group">
+	                        <span>Message</span>
+	                        <textarea></textarea>
+	                    </div>
+	                    <button class="btn btn--form" type="submit">Send</button>
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	</section>
+	
+	<section class="newsletter">
+	<div class="container">
+	    <div class="newsletter__inner">
+	        <div class="newsletter__header">
+	            <h2><span>newsletter</span></h2>
+	            <div class="newsletter__subtitle">Sign Up to our newsletter and  Save 40% on next Purchase</div>
+	        </div>
+	        <form class="newsletter__form">
+	            <div class="newsletter__form-group">
+	                <input type="text" placeholder="Email">
+	                <button class="btn btn--newsletter-form" type="submit">Subscribe</button>
+	            </div>
+	        </form>
+	    </div>
+	</div>
+	</section>
+	
+	<footer class="footer">
+	<div class="container">
+	    <div class="footer__inner">
+	        <div class="footer__content">
+	            <div class="footer__item">
+	                <div class="footer__title">Company</div>
+	                <div class="footer__item-content">
+	                    <a class="footer__link" href="#">About Us</a>
+	                    <a class="footer__link" href="#">Contact Us</a>
+	                    <a class="footer__link" href="#">Privacy Policy</a>
+	                    <a class="footer__link" href="#">Terms & Conditions</a>
+	                    <a class="footer__link" href="#">Support Center</a>
+	                </div>
+	            </div>
+	            <div class="footer__item">
+	                <div class="footer__title">Question?</div>
+	                <div class="footer__item-content">
+	                    <a class="footer__link" href="#">Help Support</a>
+	                    <a class="footer__link" href="#">Track Order</a>
+	                    <a class="footer__link" href="#">Return</a>
+	                    <a class="footer__link" href="#">Shipping Info</a>
+	                    <a class="footer__link" href="#">History</a>
+	                </div>
+	            </div>
+	            <div class="footer__item">
+	                <div class="footer__title">Useful links</div>
+	                <div class="footer__item-content">
+	                    <a class="footer__link" href="#">Gift Cards</a>
+	                    <a class="footer__link" href="#">Size Chart</a>
+	                    <a class="footer__link" href="#">My Account</a>
+	                    <a class="footer__link" href="#">Our Locations</a>
+	                    <a class="footer__link" href="#">FAQS</a>
+	                </div>
+	            </div>
+	            <div class="footer__item">
+	                <div class="footer__title">Connect with us</div>
+	                <div class="footer__item-content">
+	                    <div class="social social--footer">
+	                        <a class="social__item" href="#">
+	                            <svg class="social__icon">
+	                                <use xlink:href="#google"></use>
+	                            </svg>
+	                        </a>
+	                        <a class="social__item" href="#">
+	                            <svg class="social__icon">
+	                                <use xlink:href="#twitter"></use>
+	                            </svg>
+	                        </a>
+	                        <a class="social__item" href="#">
+	                            <svg class="social__icon">
+	                                <use xlink:href="#instagram"></use>
+	                            </svg>
+	                        </a>
+	                        <a class="social__item" href="#">
+	                            <svg class="social__icon">
+	                                <use xlink:href="#facebook"></use>
+	                            </svg>
+	                        </a>
+	                    </div>
+	                    <div class="contact__component contact__component--footer">
+	                        <a class="contact__link" href="tel:+01232546987">
+	                            <svg class="contact__link-icon">
+	                                <use xlink:href="#phone"></use>
+	                            </svg>
+	                            +012-3254-6987
+	                        </a>
+	                        <a class="contact__link" href="malito:Food&drink@gmail.com">
+	                            <svg class="contact__link-icon">
+	                                <use xlink:href="#mail"></use>
+	                            </svg>
+	                            Food&drink@gmail.com
+	                        </a>
+	                        <a class="contact__link" href="https://goo.gl/maps/WSojKh2DjnkH11o46">
+	                            <svg class="contact__link-icon">
+	                                <use xlink:href="#location"></use>
+	                            </svg>
+	                            Brahmanbaira, Dhaka, Bangladesh
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="footer__bottom">Copyright 2020 wine&food All Rights Reserved (Designhunterrbd) </div>
+	    </div>
+	</div>
+	</footer></div>
+
+<!-- JS -->
+<script src="assets/js/app.min.js"></script>
+</body>
+</html>
